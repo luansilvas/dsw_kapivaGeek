@@ -2,87 +2,102 @@
 <html>
 
 <head>
+	<title>KapivaGeek</title>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>KapivaGeek</title>
+
+
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-	      <!--Import Google Icon Font-->
-		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		  <!--Import materialize.css-->
-		  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-	
-		  <!--Let browser know website is optimized for mobile-->
-		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		  
-		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-		  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+
+
 </head>
 
 <body>
 	<nav class="nav-wrapper white" id="menu-navbar">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo" id="title"><img src="icons/kapiva(logo).png" alt="" id="logo-icon">Kapiva Geek</a>
-			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" id="menu-icon">menu</i></a>
+			<a href="#" class="brand-logo" id="title"><img src="icons/kapiva(logo).png" alt="" id="logo-icon">Kapiva
+				Geek</a>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons"
+					id="menu-icon">menu</i></a>
+			<a href="#" data-target="slide-out" id="menu-quantity-link">0</a>
+			<a href="#" data-target="slide-out" id="menu-cart-link"><i class="material-icons"
+					id="menu-cart-icon">shopping_cart</i></a>
+			<a href="#icon_prefix" data-target="slide-out" id="menu-search-link"><i class="material-icons"
+					id="menu-search-icon">search</i></a>
 
-			
 
-			<ul class="left hide-on-med-and-down"  id="categories">
 
-				<li><a href=""><img src="" alt=""  id="acessories-icon">Camisetas</a></li>
-				<li><a href=""><img src="" alt=""  id="universe-icon">Personagens</a></li>
-				<li><a href=""><img src="" alt=""  id="universe-icon">Acessórios</a></li>
-				<li><a href=""><img src="" alt=""  id="cart-icon">Canecas</a></li>	
-				<li><a href=""><img src="" alt=""  id="user-icon">Utilidades</a></li>
-				
-			  </ul>
+			<ul class="left hide-on-med-and-down" id="categories">
+				<li><a href="#miniaturas"><img src="" alt="" id="universe-icon">Personagens</a></li>
+				<li><a href="#camisetas"><img src="" alt="" id="acessories-icon">Camisetas</a></li>
+				<li><a href="#acessorios"><img src="" alt="" id="universe-icon">Acessórios</a></li>
+				<li><a href="#canecas"><img src="" alt="" id="cart-icon">Canecas</a></li>
+				<li><a href="#utilidades"><img src="" alt="" id="user-icon">Utilidades</a></li>
 
-			  <form action="" method="post" id="search-topbar">
+			</ul>
+
+			<form action="" method="post" id="search-topbar">
 				<div class="input-field">
-					<input id="#search" type="search" name="search"autofocus>
-					<label class="label-icon" for="search"><i class="material-icons" style="color: black;" id="search-topbar-label">search</i></label>
+					<input id="#search" type="search" name="search">
+					<label class="label-icon" for="search"><i class="material-icons" style="color: black;"
+							id="search-topbar-label">search</i></label>
 
 
 				</div>
 			</form>
 
 
-			  <ul class="right hide-on-med-and-down" id="options">
+			<ul class="right hide-on-med-and-down" id="options">
 
-				<li><a href=""><img src="icons/heart.png" alt=""  id="universe-icon"></a></li>
-				<li><a href=""> <img src="icons/shopping-cart.png" alt=""  id="cart-icon">1</a></li>	
-				<li><a href=""><img src="icons/user.png"  id="user-icon">Login</a></li>
-				
-			  </ul>
+				<li><a href=""><img src="icons/heart.png" alt="" id="universe-icon"></a></li>
+				<li><a href=""> <img src="icons/shopping-cart.png" alt="" id="cart-icon">0</a></li>
+				<li><a href=""><img src="icons/user.png" id="user-icon">Login</a></li>
+
+			</ul>
 		</div>
 
 	</nav>
 
 
 	<ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
-          <div class="background">
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<img src="img/kapivaradormindo.jpg" alt="">
+				</div>
 
-          </div>
+				<a href="#"><span class="black-text name">Faça login</span></a>
+				<a href="#"><span class="black-text email">ou cadastra-se</span></a>
+			</div>
+		</li>
+		<li><a class="subheader">Navegue por categorias</a></li>
+		<li><a href="#miniaturas"><i class="material-icons">smart_toy</i>Miniaturas</a></li>
+		<li><a class="waves-effect" href="#camisetas"> <i class="material-icons">checkroom</i>Camisetas</a></li>
+		<li><a class="waves-effect" href="#canecas"><i class="material-icons">local_cafe</i>Canecas</a></li>
+		<li><a class="waves-effect" href="#acessorios"><i class="material-icons">luggage</i>Acessórios</a></li>
+		<li><a class="waves-effect" href="#utilidades"><i class="material-icons">public</i>Variedades</a></li>
+	</ul>
 
-          <a href="#name"><span class="white-text name">John Doe</span></a>
-          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-      </ul>
-
-
-	  <div class="row">
+	<div class="row">
 		<form class="col s12" action="#" method="POST">
 			<div class="row" id="search-bar">
 				<div class="input-field col s12">
-					<input id="icon_prefix" type="text" class="validate" name="categoria" >
+					<input id="icon_prefix" type="text" class="validate" name="categoria">
 					<label for="icon_prefix">Pesquise aqui</label>
 					<i class="material-icons prefix">search</i>
 				</div>
@@ -92,92 +107,443 @@
 
 	<div class="slider">
 		<ul class="slides">
-		  <li>
-			<img src="https://i.pinimg.com/564x/97/80/ff/9780ff22f50f7e2e954ffbb9d85a4838.jpg"> <!-- random image -->
-			<div class="caption center-align">
-			  <h3>A maior geek store do país!</h3>
-			  <h5 class="light grey-text text-lighten-3">Qualidade e preço de fábrica</h5>
-			</div>
-		  </li>
-		  <li>
-			<img src="https://i.pinimg.com/564x/80/76/66/8076662ea2e3bf7e09633428a2745915.jpg"> <!-- random image -->
-			<div class="caption center-align">
-			  <h3>Melhores oportunidades</h3>
-			  <h5 class="light grey-text text-lighten-3">Preços camaradas</h5>
-			</div>
-		  </li>
-		  <li>
-			<img src="https://covernator.com/coverImages/game-of-thrones2.jpg"> <!-- random image -->
-			<div class="caption center-align">
-			  <h3>Cobrimos oferta!</h3>
-			  <h5 class="light grey-text text-lighten-3">Cobrimos o valor da concorrência</h5>
-			</div>
-		  </li>
-		  <li>
-			<img src="https://i.pinimg.com/564x/10/ce/bd/10cebd201bf2be43f3a66866181349e0.jpg"> <!-- random image -->
-			<div class="caption center-align">
-			  <h3>Variedade dos produtos</h3>
-			  <h5 class="light grey-text text-lighten-3" >Pesquise o nome da sua série, anime ou filme para conferir</h5>
-			</div>
-		  </li>
+			<li>
+				<img src="cover-images/cover-starwars.jpg">
+				<!-- random image -->
+				<div class="caption center-align">
+					<h3>A maior geek store do país!</h3>
+					<h5 class="light grey-text text-lighten-3">Qualidade e preço de fábrica</h5>
+				</div>
+			</li>
+			<li>
+				<img src="cover-images/Drax-and-Rocket-Guardians-of-the-Galaxy-and-Avengers-1920x500.png">
+				<!-- random image -->
+				<div class="caption center-align">
+					<h3>Melhores oportunidades</h3>
+					<h5 class="light grey-text text-lighten-3">Preços camaradas</h5>
+				</div>
+			</li>
+			<li>
+				<img src="cover-images/spider.jpg"> <!-- random image -->
+				<div class="caption center-align">
+					<h3>Cobrimos oferta!</h3>
+					<h5 class="light grey-text text-lighten-3">Cobrimos o valor da concorrência</h5>
+				</div>
+			</li>
+			<li>
+				<img src="cover-images/Lord-Of-The-Rings-Fellowship-Of-The-Ring-1920x500.jpeg">
+				<!-- random image -->
+				<div class="caption center-align">
+					<h3>Variedade dos produtos</h3>
+					<h5 class="light grey-text text-lighten-3">Pesquise o nome da sua série, anime ou filme para
+						conferir</h5>
+				</div>
+			</li>
 		</ul>
-	  </div>
-
-	
-
-
-	  <div class="row" id="links">
-		<div class="col s12">
-			<div class="select-field col s2"><a class="btn-flat"  id="" href="">Miniaturas<i class="material-icons right"></i></a></div>
-			<div class="select-field col s2"><a class="btn-flat"  id=""href="">Camisetas<i class="material-icons right"></i></a></div>
-			<div class="select-field col s2"><a class="btn-flat"  id="" href="">Canecas<i class="material-icons right"></i></a></div>
-			<div class="select-field col s2"><a class="btn-flat"  id="" href="">Acessórios<i class="material-icons right"></i></a></div>
-			<div class="select-field col s2"><a class="btn-flat"  id="" href="">Variedades<i class="material-icons right"></i></a></div>
-			
-		</div>
 	</div>
 
 
 
-	  <section class="category-carousel">
-		  <h3 class="category-title">Miniaturas e Personagens</h3>
+
+	<div class="row" id="links">
+		<div class="col s12">
+			<div class="select-field col s2"><a class="btn-flat" id="" href="#miniaturas">Miniaturas<i
+						class="material-icons right"></i></a></div>
+			<div class="select-field col s2"><a class="btn-flat" id="" href="#camisetas">Camisetas<i
+						class="material-icons right"></i></a></div>
+			<div class="select-field col s2"><a class="btn-flat" id="" href="#acessorios">Canecas<i
+						class="material-icons right"></i></a></div>
+			<div class="select-field col s2"><a class="btn-flat" id="" href="#canecas">Acessórios<i
+						class="material-icons right"></i></a></div>
+			<div class="select-field col s2"><a class="btn-flat" id="" href="#utilidades">Variedades<i
+						class="material-icons right"></i></a></div>
+
+		</div>
+	</div>
+	<section class="category-carousel" id="promo">
+		<h3 class="category-title">Promoções</h3>
 		<div class="category-category-carousel-container">
-			
-			
 
 
 			<div class="product-card">
-				<img class="product-img" src="product_img/hf1.jpg">
-				<div class="bookmark-field">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
+				<a href="#">
+					<img class="product-img" src="product_img/offline.jpg">
+				</a>
 				<div class="add-cart-field">
-					<a href="#" class="fas fa-cart-plus fa-2x"></a>
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
 				</div>
 				<div class="info">
-					<a><h3 class="">Miniatura Homem de ferro </h3></a>
-					<h5 class="price">R$198.90</h5>
-					<br>
-					<div class="stars">
-						<i class="fas fa-star"></i> 
-						<i class="fas fa-star"></i> 
-						<i class="fas fa-star"></i> 
-					</div>
-					
+					<a href="#">
+						<a>
+							<h3 class="">Camiseta feminina offline</h3>
+						</a>
+						<h5 class="price">de<s>R$19.90</s> por R$19.90</h5>
+
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/plataforma.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Luminária Harry Potter</h3>
+						</a>
+						<h5 class="price">de <s>R$299.90</s> por R$259.90</h5>
+
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
+				</div>
+			</div>
 
 
+		</div>
+	</section>
+
+
+
+	<section class="category-carousel" id="miniaturas">
+		<h3 class="category-title">Miniaturas e Personagens</h3>
+		<div class="category-category-carousel-container">
+
+
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/hf1.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Miniatura Homem de ferro </h3>
+						</a>
+						<h5 class="price">R$198.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/9fox.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Raposa 9 caldas Naruto</h3>
+						</a>
+						<h5 class="price">R$159.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/funkoHarry.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Funko harry potter e Edwiges</h3>
+						</a>
+						<h5 class="price">R$298.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
 				</div>
 			</div>
 
 		</div>
 	</section>
 
-	  
+
+	<section class="category-carousel" id="camisetas">
+		<h3 class="category-title">Camisetas Femininas</h3>
+		<div class="category-category-carousel-container">
+
+
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/fshirt.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Camiseta feminina star wars</h3>
+						</a>
+						<h5 class="price">R$59.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/femMarvel.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Camiseta femina Marvel</h3>
+						</a>
+						<h5 class="price">R$29.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="category-carousel">
+		<h3 class="category-title">Camisetas Masculinas</h3>
+		<div class="category-category-carousel-container">
+
+
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/mascnasa.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Camiseta masculina NASA</h3>
+						</a>
+						<h5 class="price">R$49.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/mascthrones.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Camiseta masculina game of thrones</h3>
+						</a>
+						<h5 class="price">R$39.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="category-carousel" id="canecas">
+		<h3 class="category-title">Canecas</h3>
+		<div class="category-category-carousel-container">
+
+
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/candeadpool.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Caneca deadpool</h3>
+						</a>
+						<h5 class="price">R$49.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/mascthrones.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Caneca Vegeta</h3>
+						</a>
+						<h5 class="price">R$59.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="category-carousel" id="acessorios">
+		<h3 class="category-title">Acessórios</h3>
+		<div class="category-category-carousel-container">
+
+
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/collar.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Colar players para casais</h3>
+						</a>
+						<h5 class="price">R$69.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="category-carousel" id="utilidades">
+		<h3 class="category-title">Variados</h3>
+		<div class="category-category-carousel-container">
+
+
+			<div class="product-card">
+				<a href="#">
+					<img class="product-img" src="product_img/almofada.jpg">
+				</a>
+				<div class="add-cart-field">
+					<a href="#!" class="fas fa-cart-plus fa-2x"></a>
+				</div>
+				<div class="info">
+					<a href="#">
+						<a>
+							<h3 class="">Almofada preta Batman</h3>
+						</a>
+						<h5 class="price">R$29.90</h5>
+						<br>
+						<div class="stars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<footer class="page-footer brown">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Kapiva Geek</h5>
+					<p class="grey-text text-lighten-4">Todos os direitos reservados do uso de imagem.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				<a class="grey-text text-lighten-4 right" href="#!"> © 2021 Copyright KapivaGeek</a>
+			</div>
+		</div>
+	</footer>
 
 
 
-	
-				
 
 
 
@@ -187,31 +553,30 @@
 
 
 
-	
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 	<script>
 
 
-    $('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 300
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true // Choose whether you can drag to open on touch screens,
-    }
-  ); 
- 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems);
-});
+		$('.button-collapse').sideNav({
+			menuWidth: 300, // Default is 300
+			edge: 'left', // Choose the horizontal origin
+			closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+			draggable: true // Choose whether you can drag to open on touch screens,
+		}
+		);
+
+		document.addEventListener('DOMContentLoaded', function () {
+			var elems = document.querySelectorAll('.sidenav');
+			var instances = M.Sidenav.init(elems);
+		});
 
 
-$(document).ready(function(){
-  $('.slider').slider();
-});
-	 </script> 
+		$(document).ready(function () {
+			$('.slider').slider();
+		});
+	</script>
 </body>
 
 </html>
