@@ -1,3 +1,6 @@
+body{
+	font-family: 'Courier Prime', monospace;
+}
 #menu-navbar {
 	position: fixed;
 	top: 0;
@@ -101,10 +104,10 @@
 }
 
 #categories {
-	margin-left: 350px;
+	margin-left: 400px;
 }
 
-@media (max-width:1100px) {
+@media (max-width:1159px) {
 	#categories {
 		display: none;
 	}
@@ -137,7 +140,12 @@
 #tshirt-icon, #toy-icon, #coffe-icon, #acessories-icon, #universe-icon, #cart-icon, #user-icon, #logo-icon {
 	margin-bottom: -5px;
 }
-
+#itemD-quantity{
+margin-left: -15px;
+}
+.itemD{
+	color: black;
+}
 .brand-logo img {
 	width: 100px;
 	margin-top: 10px;
@@ -148,7 +156,7 @@ nav ul li a, li a, #menu-icon, #menu-search-icon, #menu-cart-icon {
 }
 
 #menu-quantity-link {
-	margin-left: -15px;
+	margin-left:-15px;
 }
 
 @media (min-width:993px) {
@@ -230,7 +238,7 @@ nav ul li a, li a, #menu-icon, #menu-search-icon, #menu-cart-icon {
 	transform-origin: center left;
 	position: relative;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26);
-	margin-right: 1.5%;
+	margin-right: 15px;
 }
 
 .product-card:first-child, .category-title {
