@@ -3,17 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 body {
-
     background-color: white;
-
 }
-
-.go-back {
-    margin-left: 2%;
-    margin-top: -60px;
-}
-
-
 
 .column h1 {
     width: 650px;
@@ -27,13 +18,6 @@ body {
     margin: 0 auto;
 
 }
-
-.column a {
-    text-align: center;
-    width: 100%;
-    border-radius: 50px;
-}
-
 
 #img {
     width: 50%;
@@ -53,13 +37,6 @@ body {
     width: 100%;
 
 }
-
-#carrinho {
-    float: right;
-    font-family: 'Courier Prime', monospace;
-}
-
-
 
 
 .logoTitulo p {
@@ -348,6 +325,9 @@ tbody {
     margin: 0 auto;
     font-family: 'Courier Prime', monospace;
 
+}
+#mobile{
+    width: 100%;
 }
 
 .principal li {
