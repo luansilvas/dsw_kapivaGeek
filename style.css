@@ -21,7 +21,7 @@
 }
 
 #links .select-field:first-child {
-	margin-left: 15%;
+	margin-left: 12%;
 }
 
 .category-title {
@@ -44,7 +44,7 @@
 
 .slider .indicators {
 	top: 370px;
-	z-index: 100;
+	z-index: 99;
 	text-align: left;
 }
 
