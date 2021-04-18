@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+
+    background-color: white;
+
+}
+
+.go-back {
+    margin-left: 2%;
+    margin-top: -60px;
+}
+
+
+
+.column h1 {
+    width: 650px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.botao {
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.column a {
+    text-align: center;
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+#img {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+#img img {
+    width: 30%;
+
+}
+
+
+.logoTitulo {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+#carrinho {
+    float: right;
+    font-family: 'Courier Prime', monospace;
+}
+
+
+
+
+.logoTitulo p {
+    font-size: 50px;
+    font-family: 'Courier Prime', monospace;
+}
+
+#subtitulo {
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+@media (min-width: 1079px) {
+    #carrinho img {
+        margin: 0 40px 0 2px;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    #img img {
+        width: 30%;
+        float: left;
+        text-align: center
+    }
+
+    .logoTitulo p {
+        font-size: 20px;
+    }
+
+    #carrinho {
+        margin: 0;
+        text-indent: -9999px;
+
+    }
+
+    #subtitulo {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 1079px) {
+    .column {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    .column h1 {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        margin-bottom: 15px;
+        font-family: 'Courier Prime', monospace;
+        font-size: 35px;
+
+
+    }
+}
+
+@media (min-width: 1079px) {
+    .column {
+        width: 600px;
+        padding: 10px;
+        background-color: white;
+        margin-bottom: 15px;
+
+    }
+
+    #content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column h1 {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        margin-bottom: 15px;
+        font-family: 'Courier Prime', monospace;
+        font-size: 45px;
+
+
+    }
+}
+
+
+
+.column h3 p {
+    font-family: 'Courier Prime', monospace;
+}
+
+#featured {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid black;
+
+}
+
+
+.thumbnail {
+    object-fit: cover;
+    max-width: 180px;
+    max-height: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 5px;
+    border: 2px solid black;
+
+}
+
+#product-full-name p,
+h5 {
+    font-family: 'Courier Prime', monospace;
+    color: black;
+
+}
+
+#product-full-name {
+    margin-top: 3%;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+
+#slide-wrapper {
+    max-width: 500px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#slider {
+    width: 440px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+}
+
+#slider::-webkit-scrollbar {
+    width: 15px;
+
+}
+
+#slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+}
+
+#slider::-webkit-scrollbar-thumb {
+    background-color: #dede2e;
+    outline: 1px solid slategrey;
+    border-radius: 100px;
+
+}
+
+#slider::-webkit-scrollbar-thumb:hover {
+    background-color: #18b5ce;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.arrow:hover {
+    opacity: .5;
+    width: 35px;
+    height: 35px;
+}
+
+/*-------------------------------Estilo carrinho-----------------------*/
+
+
+
+
+
+.titulos {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #EEE9E9;
+    width: 60%;
+}
+
+tbody {
+    background-color: white;
+
+
+}
+
+.finalizar {
+    margin: 20px;
+    width: 20%;
+}
+
+.finalizar button {
+    background-color: #2CBF51;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 20px
+}
+
+.tabela {
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #CECECE;
+    font-family: 'Courier Prime', monospace;
+}
+
+.tabela table {
+    width: 97%;
+    margin: 0 auto;
+}
+
+
+#produto img {
+    float: left;
+    margin-right: 10px;
+    width: 40%;
+    border: 1px solid #D3D3D3;
+}
+
+.tituloTabela {
+    width: 30%;
+
+}
+
+.tituloTabelaQtd {
+    width: 15%;
+}
+
+.valores {
+    width: 20%;
+}
+
+
+.borda p {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+.borda input {
+    width: 40%;
+    text-align: center;
+}
+
+#divisor {
+    display: flex;
+    width: 100%;
+}
+
+.principal {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Courier Prime', monospace;
+
+}
+
+.principal li {
+    list-style: none;
+    font-size: 30px;
+}
+
+.principal p{
+    margin-top: 400px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.principal li:first-child {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.principal img {
+    width: 45%;
+    margin: 5px;
+    border: 1px solid #D3D3D3;
+}
+
+#botaoMobile{
+    text-align: center;
+    margin: 10px;
+}
+
+#botaoMobile button{
+    background-color: #2CBF51;
+    width: 500px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-family: 'Courier Prime', monospace;
+}
+
+@media (max-width: 1049px) {
+
+    .tabela {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 1049px) {
+
+    #mobile {
+        display: none;
+    }
+}

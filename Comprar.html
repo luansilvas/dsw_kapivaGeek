@@ -1,0 +1,100 @@
+<html>
+    <head>
+    <title>Comprar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="styleProducts.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div>
+
+        <img src="icons/left-arrow.png">
+        <p id="carrinho">Meu carrinho<img id="carrinho" src="icons/add-to-cart-bold.png"></p>
+        <div class="logoTitulo">
+            <div id="img">
+                <p><img src="img/kapivaMenor.png"> KapivaGeek</p>
+                <p id="subtitulo">A sua loja geek</p>
+            </div>
+        </div>
+
+        <div id="content-wrapper">
+
+
+            <div class="column">
+                <img id="featured" src="img/Kurama01.png">
+
+                <div id="slide-wrapper">
+                    <img id="slideLeft" class="arrow" src="icons/left-chevron.png">
+
+                    <div id="slider">
+                        <img class="thumbnail" src="img/Kurama01.png">
+
+                        <img class="thumbnail" src="img/Kurama02.png">
+
+                        <img class="thumbnail" src="img/Kurama03.png">
+
+                        <img class="thumbnail" src="img/Kurama04.png">
+                    </div>
+
+                    <img id="slideRight" class="arrow" src="icons/right-chevron.png">
+                </div>
+            </div>
+
+            <div class="column">
+                <h1>Action figure kurama</h1>
+                <h3>
+                    <p>R$ 200.00</p>
+                </h3>
+                <br>
+
+                <div id="product-full-name">
+                    <h5>Descrição:</h5>
+                    <p>Kurama figura de ação desenvolvida por impressão 3D, com pintura a mão.
+                        Item de colecionador, fabricado por encomenda em material ABS Premium de alta qualidade.
+                        Pintura super detalhada buscando máxima fidelidade com a obra.
+                        A peça tem aplicação de verniz profissional, que garante alta proteção e durabilidade.</p>
+                </div>
+                <div class="botao">
+                    <a class="btn btn-dark" href="#">Eu quero!</a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            let thumbnails = document.getElementsByClassName('thumbnail')
+
+            let activeImages = document.getElementsByClassName('active')
+
+            for (var i = 0; i < thumbnails.length; i++) {
+
+                thumbnails[i].addEventListener('mouseover', function() {
+                    console.log(activeImages)
+
+                    if (activeImages.length > 0) {
+                        activeImages[0].classList.remove('active')
+                    }
+
+
+                    this.classList.add('active')
+                    document.getElementById('featured').src = this.src
+                })
+            }
+
+
+            let buttonRight = document.getElementById('slideRight');
+            let buttonLeft = document.getElementById('slideLeft');
+
+            buttonLeft.addEventListener('click', function() {
+                document.getElementById('slider').scrollLeft -= 180
+            })
+
+            buttonRight.addEventListener('click', function() {
+                document.getElementById('slider').scrollLeft += 180
+            })
+        </script>
+    </div>
+</body></html>
