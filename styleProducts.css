@@ -141,6 +141,8 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 30px;
+        padding-top: 30px;
     }
 
     .column h1 {
@@ -283,6 +285,10 @@ tbody {
     font-size: 20px
 }
 
+.finalizar p{
+    font-size: 30px;
+}
+
 .tabela {
     border-radius: 10px;
     width: 95%;
@@ -326,7 +332,7 @@ tbody {
     font-size: 20px;
 }
 .borda input {
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 
@@ -386,6 +392,11 @@ tbody {
     .tabela {
         display: none;
     }
+    #mobile{
+       
+        margin-top: 30px;
+        padding-top: 60px;
+    }
 
 
 }
@@ -394,5 +405,10 @@ tbody {
 
     #mobile {
         display: none;
+    }
+
+    .main{
+        margin-top: 30px;
+        padding-top: 60px;
     }
 }
