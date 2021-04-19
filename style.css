@@ -107,7 +107,7 @@ body{
 	margin-left: 400px;
 }
 
-@media (max-width:1159px) {
+@media (max-width:1250px) {
 	#categories {
 		display: none;
 	}

@@ -255,6 +255,7 @@ tbody {
 .finalizar {
     margin: 20px;
     width: 20%;
+    float: right;
 }
 
 .finalizar button {
@@ -271,6 +272,7 @@ tbody {
 .tabela {
     border-radius: 10px;
     width: 95%;
+    height: 900px;
     margin: 0 auto;
     background-color: #CECECE;
     font-family: 'Courier Prime', monospace;
